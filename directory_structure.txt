@@ -1,0 +1,108 @@
+.
+├── LICENSE
+├── README.md
+├── apply_l5kit_patch.sh
+├── directory_structure.txt
+├── download_1st_level_weights.sh
+├── ego.py
+├── input
+│   ├── README.md
+│   ├── aerial_map
+│   │   ├── LICENSE
+│   │   ├── aerial_map.png
+│   │   ├── feedback.txt
+│   │   └── nearmap_images
+│   ├── meta.json
+│   ├── multi_mode_sample_submission.csv
+│   ├── pre_render_h01248_XXL
+│   │   ├── test
+│   │   ├── train_XXL
+│   │   └── validate
+│   ├── scenes
+│   │   ├── mask.npz
+│   │   ├── sample.zarr
+│   │   ├── test.zarr
+│   │   ├── train.zarr
+│   │   ├── train_XXL.zarr
+│   │   └── validate.zarr
+│   ├── semantic_map
+│   │   ├── LICENSE
+│   │   ├── feedback.txt
+│   │   └── semantic_map.pb
+│   └── single_mode_sample_submission.csv
+├── l5kit.patch
+├── make_submit
+│   ├── dataset-metadata.json
+│   ├── kernel-metadata.json
+│   ├── kernel_code.py
+│   ├── make_submit.py
+│   └── submission.csv
+├── predict_test_l1.sh
+├── prepare_data_test.sh
+├── prepare_data_train.sh
+├── requirements.txt
+├── src
+│   ├── 1st_level
+│   │   ├── benchmark_datasets.py
+│   │   ├── checkpoints
+│   │   │   ├── 140_xxl_enet_b5
+│   │   │   │   └── 368.pt
+│   │   │   ├── 140_xxl_xception41
+│   │   │   │   └── 516.pt
+│   │   │   ├── 140_xxl_xception41_16modes
+│   │   │   │   └── 244.pt
+│   │   │   ├── 140_xxl_xception41_bs128
+│   │   │   │   └── 524.pt
+│   │   │   ├── 140_xxl_xception41_wp
+│   │   │   │   └── 518.pt
+│   │   │   ├── 140_xxl_xception65
+│   │   │   │   └── 368.pt
+│   │   │   ├── 140_xxl_xception71
+│   │   │   │   └── 370.pt
+│   │   │   ├── README.md
+│   │   │   └── weights.zip
+│   │   ├── common.py
+│   │   ├── config.py
+│   │   ├── dataset.py
+│   │   ├── experiments
+│   │   │   ├── 140_xxl_enet_b5.yaml
+│   │   │   ├── 140_xxl_xception41.yaml
+│   │   │   ├── 140_xxl_xception41_16modes.yaml
+│   │   │   ├── 140_xxl_xception41_bs128.yaml
+│   │   │   ├── 140_xxl_xception41_wp.yaml
+│   │   │   ├── 140_xxl_xception65.yaml
+│   │   │   └── 140_xxl_xception71.yaml
+│   │   ├── fast_rasteriser.py
+│   │   ├── models.py
+│   │   ├── models_common.py
+│   │   ├── models_reg.py
+│   │   ├── predict.py
+│   │   ├── prerender_raster.py
+│   │   ├── submissions
+│   │   │   ├── README.md
+│   │   │   ├── multi_mode_sample_submission.csv
+│   │   │   ├── sub_140_xxl_enet_b5_368_test.npz
+│   │   │   ├── sub_140_xxl_xception41_16modes_244_test.npz
+│   │   │   ├── sub_140_xxl_xception41_516_test.npz
+│   │   │   ├── sub_140_xxl_xception41_bs128_524_test.npz
+│   │   │   ├── sub_140_xxl_xception41_wp_518_test.npz
+│   │   │   ├── sub_140_xxl_xception65_368_test.npz
+│   │   │   └── sub_140_xxl_xception71_370_test.npz
+│   │   ├── train.py
+│   │   ├── train_distributed.py
+│   │   └── utils.py
+│   └── 2nd_level
+│       ├── README.md
+│       ├── config.py
+│       ├── dataset.py
+│       ├── engine.py
+│       ├── infer.py
+│       ├── models.py
+│       ├── modules.py
+│       ├── submission.csv
+│       ├── train.py
+│       ├── transformer.bin
+│       └── utils.py
+└── train.sh
+
+16 directories, 80 files
